@@ -1,4 +1,5 @@
 # Implementation the Configmap and Secret on Project NodeJS in Kubernetes
+
 🚢[Docker Image](https://hub.docker.com/repository/docker/rootduck/express-api)
 
 ## Running On Premise 
@@ -43,7 +44,7 @@
     $ kubectl apply -f ingress.yaml
     ```
 
-6. If you want, check configuration environment:
+6. If you want, check configuration environment.
     ```sh
     $ kubectl get pods
     NAME                           READY   STATUS    RESTARTS   AGE
@@ -60,7 +61,7 @@
     Database password adminpassword
     ```
 
-7. Ensure there is no .env in the project
+7. Ensure there is no .env in the project.
     ```sh
     $ kubectl exec -it express-api-744fb66d94-4d4dj -- ls -la
     total 80
