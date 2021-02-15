@@ -8,15 +8,15 @@ spec:
   - name: http
     port: 80
     protocol: TCP
-    targetPort: 8080
+    targetPort: 3000
   - name: https
     port: 443
     protocol: TCP
-    targetPort: 8080
+    targetPort: 3000
   selector:
     app: express-api
 ---    
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: express-api
@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: express-api
-          image: rootduck/express-api:1.0.0
+          image: rootduck/express-api:1.0.1
           env:
             - name: MONGODB_HOST
               valueFrom:

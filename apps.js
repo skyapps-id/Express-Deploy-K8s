@@ -23,6 +23,8 @@ app.use(function(req, res, next) {
 app.listen(config.app.port);
 console.log('Debug ' + config.app.debug);
 console.log('Express API running on port ' + config.app.port);
-// Example cek log
+// Example cek configmap and secret
 console.log('Database host ' + config.db.host);
 console.log('Database name ' + config.db.name);
+console.log('Database username ' + config.db.username);
+console.log('Database password ' + config.db.password);
