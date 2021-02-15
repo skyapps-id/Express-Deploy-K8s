@@ -1,0 +1,4 @@
+.git
+.cache
+.env
+**/K8s
