@@ -36,23 +36,23 @@ spec:
         - name: express-api
           image: rootduck/express-api:1.0.1
           env:
-            - name: MONGODB_HOST
+            - name: DB_HOST
               valueFrom:
                 configMapKeyRef:
                   name: express-api-configmap
-                  key: mongodb_host
-            - name: MONGODB_NAME
+                  key: db_host
+            - name: DB_NAME
               valueFrom:
                 configMapKeyRef:
                   name: express-api-configmap
-                  key: mongodb_name
-            - name: MONGODB_USER
+                  key: db_name
+            - name: DB_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: express-api-secret
-                  key: mongodb_username
-            - name: MONGODB_PASSWORD
+                  key: db_username
+            - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: express-api-secret
-                  key: mongodb_password
+                  key: db_password
