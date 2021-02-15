@@ -2,18 +2,18 @@
 
 🚢[Docker Image](https://hub.docker.com/repository/docker/rootduck/express-api)
 
-## Running On Premise 
+### Running On Premise 
 - Ubuntu 20.04 LTS
 - Load balancer MetalLB
 - Ingress Nginx
 
-## Specification My Cluster
+### Specification My Cluster
 - Master node vCPU 2 Memory 8Gb
 - Worker node1 vCPU 2 Memory 2Gb
 - Worker node2 vCPU 2 Memory 2Gb
 - Worker node3 vCPU 2 Memory 2Gb
 
-## Installation
+### Installation
 1. Clone this project.
     ```sh
     $ git clone https://github.com/skyapps-id/Express-Deploy-K8s.git 
@@ -95,6 +95,6 @@
     }
     ```
    
-## Licence
+### Licence
 
 This work is under [MIT](LICENCE) licence.
